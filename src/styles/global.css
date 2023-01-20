@@ -23,7 +23,7 @@
 body {
   background: url(../assets/images/background.jpg) no-repeat;
   background-size: cover;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Titillium', sans-serif;
   color: var(--white);
 }
 
@@ -33,6 +33,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.container {
+  margin: 20px;
 }
 
 /* Colors */
@@ -46,7 +50,7 @@ ul {
   --purple: #9C51B7;
   --blue: #5198B7;
   --sky-blue: #78D2EE;
-  --gradient: linear-gradient(#FFFFFF 100%, #FFFFFF 0%); 
+  --gradient: linear-gradient(#FFFFFF 100%, #FFFFFF 0%);
 }
 
 /* Typhograpy */
@@ -71,6 +75,28 @@ h4 {
 }
 
 h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.paragraph-16-tw {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.paragraph-14-tw {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.paragraph-20-o {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.paragraph-16-o {
+  font-family: 'Outfit', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }

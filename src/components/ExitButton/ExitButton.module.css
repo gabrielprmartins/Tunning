@@ -1,0 +1,10 @@
+.button {
+  /* background-color: rgba(0, 0, 0, .5); */
+  padding: 4px 8px;
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
