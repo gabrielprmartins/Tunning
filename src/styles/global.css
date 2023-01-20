@@ -1,0 +1,81 @@
+/* Fonts */
+@font-face {
+  font-family: 'Outfit';
+  src: url(../fonts/outfit/Outfit-Regular.ttf) format('truetype'),
+  url(../fonts/outfit/Outfit-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Black.ttf) format('truetype'),
+  url(../fonts/titillium-web/TitilliumWeb-Bold.ttf) format('truetype'),
+  url(../fonts//titillium-web/TitilliumWeb-Regular.ttf) format('truetype'),
+  url(../fonts/titillium-web/TitilliumWeb-SemiBold.ttf) format('truetype');
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../assets/images/background.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Outfit', sans-serif;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Colors */
+:root {
+  --red: #C33A53;
+  --green: #09B879;
+  --white: #FFFFFF;
+  --gray: #9A9A9A;
+  --moss-green: #3A4C3C;
+  --gold: #B79451;
+  --purple: #9C51B7;
+  --blue: #5198B7;
+  --sky-blue: #78D2EE;
+  --gradient: linear-gradient(#FFFFFF 100%, #FFFFFF 0%); 
+}
+
+/* Typhograpy */
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 600;
+}
