@@ -1,10 +1,25 @@
 .button {
-  /* background-color: rgba(0, 0, 0, .5); */
-  padding: 4px 8px;
+  background-color: var(--opacity-5);
+  padding: 8px 16px;
   color: var(--white);
   border: none;
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.button strong {
+  transition: var(--transition);
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.button:hover {
+  background-color: var(--opacity-15);
+}
+
+.button:active, .button:active strong {
+  color: #4B4B4B;
 }

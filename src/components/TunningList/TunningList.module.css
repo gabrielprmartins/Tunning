@@ -1,0 +1,68 @@
+.tunningContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tunningContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.tunningGrid1 {
+  grid-column: 2;
+}
+
+.tunningGrid2 {
+  grid-column: 3;
+}
+
+.tunningContainer > img {
+  max-width: 250px;
+  margin-bottom: 14px;
+}
+
+.tunningList {
+  width: 250px;
+  display: grid;
+  gap: 8px;
+}
+
+.tunningList div > li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  background-color: var(--opacity-10);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.tunningList div > li:hover {
+  background-color: var(--opacity-15);
+}
+
+.tunningList div > li:active {
+  background-color: var(--opacity-5);
+}
+
+.tunningList div > li:global(.active) {
+  margin-top: 10px;
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--opacity-20);
+  border-color: var(--white);
+  box-shadow: -4px 4px 0 0 var(--opacity-25), -10px 10px 0 0 var(--opacity-25);
+}
+
+.tunningList li > img {
+  width: 20px;
+  height: 20px;
+}

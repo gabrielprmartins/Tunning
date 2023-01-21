@@ -1,16 +1,44 @@
 /* Fonts */
 @font-face {
   font-family: 'Outfit';
-  src: url(../fonts/outfit/Outfit-Regular.ttf) format('truetype'),
-  url(../fonts/outfit/Outfit-Bold.ttf) format('truetype');
+  src: url(../fonts/outfit/Outfit-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(../fonts/outfit/Outfit-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Titillium';
-  src: url(../fonts/titillium-web/TitilliumWeb-Black.ttf) format('truetype'),
-  url(../fonts/titillium-web/TitilliumWeb-Bold.ttf) format('truetype'),
-  url(../fonts//titillium-web/TitilliumWeb-Regular.ttf) format('truetype'),
-  url(../fonts/titillium-web/TitilliumWeb-SemiBold.ttf) format('truetype');
+  src: url(../fonts/titillium-web/TitilliumWeb-Black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-SemiBold.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Reset */
@@ -18,6 +46,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
 }
 
 body {
@@ -35,7 +71,13 @@ ul {
   list-style: none;
 }
 
-.container {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
   margin: 20px;
 }
 
@@ -50,7 +92,38 @@ ul {
   --purple: #9C51B7;
   --blue: #5198B7;
   --sky-blue: #78D2EE;
-  --gradient: linear-gradient(#FFFFFF 100%, #FFFFFF 0%);
+  --gradient: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  --opacity-5: rgba(255, 255, 255, 5%);
+  --opacity-10: rgba(255, 255, 255, 10%);
+  --opacity-15: rgba(255, 255, 255, 15%);
+  --opacity-20: rgba(255, 255, 255, 20%);
+  --opacity-25: rgba(255, 255, 255, 25%);
+  --opacity-30: rgba(255, 255, 255, 30%);
+  --opacity-40: rgba(255, 255, 255, 40%);
+  --opacity-50: rgba(255, 255, 255, 50%);
+  --opacity-80: rgba(255, 255, 255, 80%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--opacity-5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animations */
+:root {
+  --transition: 0.2s;
 }
 
 /* Typhograpy */
@@ -101,7 +174,7 @@ h5 {
   font-weight: 400;
 }
 
-span {
+.span {
   font-size: 12px;
   font-weight: 600;
 }

@@ -1,0 +1,44 @@
+.decalContainer > img {
+  position: relative;
+  margin: 8px 0 4px;
+}
+
+
+.decalOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.decalSlider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.decalSlider > img {
+  max-width: 17px;
+  cursor: pointer;
+}
+
+.decalSlider p > span {
+  color: var(--opacity-40);
+}
+
+.decalPrice {
+  background-color: var(--opacity-15);
+  padding: 4px;
+  position: relative;
+  margin-right: 34px;
+}
+
+.decalPrice:after {
+  content: '';
+  background: url('../../../../assets/icons/tick-circle.svg') no-repeat center center rgba(9, 184, 121, 0.2);
+  position: absolute;
+  right: -34px;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background-size: 16px;
+}
