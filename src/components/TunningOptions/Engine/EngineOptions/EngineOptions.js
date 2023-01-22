@@ -1,3 +1,4 @@
+import EngineDetails from "../EngineDetails/EngineDetails";
 import styles from "./EngineOptions.module.css";
 
 const options = [
@@ -41,14 +42,19 @@ const options = [
 
 const EngineOptions = () => {
   return (
-    <ul className={styles.engineList}>
-      {options.map(({ name, price }) => (
-        <li key={name}>
-          <p className="paragraph-14-tw">{name}</p>
-          <p className={`paragraph-14-tw ${styles.price}`}>{price}</p>
-        </li>
-      ))}
-    </ul>
+    <div className={styles.engineContainer}>
+      <ul className={styles.engineList}>
+        {options.map(({ name, price }) => (
+          <li key={name}>
+            <p className="paragraph-14-tw">{name}</p>
+            <p className={`paragraph-14-tw ${styles.price}`}>{price}</p>
+          </li>
+        ))}
+      </ul>
+      <div className={styles.engineDetails}>
+        <EngineDetails />
+      </div>
+    </div>
   );
 };
 

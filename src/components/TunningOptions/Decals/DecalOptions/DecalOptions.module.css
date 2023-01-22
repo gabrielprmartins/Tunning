@@ -1,8 +1,18 @@
-.decalContainer > img {
+.decalContainer {
+  position: relative;
+}
+
+.decalDetails {
+  position: absolute;
+  top: -350px;
+  left: 200%;
+  overflow: auto;
+}
+
+.decalContent > img {
   position: relative;
   margin: 8px 0 4px;
 }
-
 
 .decalOptions {
   display: flex;

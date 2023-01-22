@@ -11,8 +11,6 @@ import FixIcon from "../../assets/icons/fix.svg";
 import ColorBucketIcon from "../../assets/icons/color-bucket.svg";
 import VehicleIcon from "../../assets/icons/vehicle.svg";
 import StickerIcon from "../../assets/icons/sticker.svg";
-import EngineDetails from "../TunningOptions/Engine/EngineDetails/EngineDetails";
-import DecalDetails from "../TunningOptions/Decals/DecalDetails/DecalDetails";
 
 const options = [
   {
@@ -59,38 +57,22 @@ const TunningList = () => {
   return (
     <div className={styles.tunningContainer}>
       <img src={Banner} />
-      <div className={styles.tunningContent}>
-        <ul className={styles.tunningList}>
-          {options.map(({ name, img, component }) => (
-            <div key={name}>
-              <li
-                key={name}
-                onClick={handleActiveOptions}
-                id={name}
-                className={optionName === name ? "active" : ""}
-              >
-                <img src={img} />
-                <p className="paragraph-16-tw">{name}</p>
-              </li>
-              {optionName === name ? component : ""}
-            </div>
-          ))}
-        </ul>
-        {optionName === "Motor" ? (
-          <div className={styles.tunningGrid1}>
-            <EngineDetails />
+      <ul className={styles.tunningList}>
+        {options.map(({ name, img, component }) => (
+          <div key={name}>
+            <li
+              key={name}
+              onClick={handleActiveOptions}
+              id={name}
+              className={optionName === name ? "active" : ""}
+            >
+              <img src={img} />
+              <p className="paragraph-16-tw">{name}</p>
+            </li>
+            {optionName === name ? component : ""}
           </div>
-        ) : (
-          ""
-        )}
-        {optionName === "Decalques" ? (
-          <div className={styles.tunningGrid2}>
-            <DecalDetails />
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+        ))}
+      </ul>
     </div>
   );
 };

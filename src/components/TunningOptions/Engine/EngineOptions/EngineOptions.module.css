@@ -1,3 +1,13 @@
+.engineContainer {
+  position: relative;
+}
+
+.engineDetails {
+  position: absolute;
+  top: -50px;
+  left: calc(100% + 40px);
+}
+
 .engineList {
   margin-top: 4px;
   display: grid;
