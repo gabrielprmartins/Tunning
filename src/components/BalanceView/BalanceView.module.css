@@ -1,3 +1,4 @@
+/* Container */
 .balanceContainer {
   position: absolute;
   top: 20px;
@@ -5,6 +6,7 @@
   text-align: right;
 }
 
+/* Balance */
 .balanceGrid {
   display: grid;
   grid-template-columns: auto 40px;
@@ -19,6 +21,7 @@
   color: var(--gold);
 }
 
+/* Icon */
 .arrowsIcon {
   background-color: var(--opacity-10);
   align-self: end;

@@ -1,9 +1,11 @@
+/* Container */
 .advertisingContainer {
   display: grid;
   gap: 4px;
   max-width: 180px;
 }
 
+/* Buttons */
 .openButton {
   background-color: var(--opacity-10);
   color: var(--gray);
@@ -26,6 +28,13 @@
   cursor: pointer;
 }
 
+.advertisingOverviewButton {
+  text-transform: lowercase;
+  text-align: center;
+  color: var(--gray);
+}
+
+/* Button Animation */
 .closeButton:hover, .openButton:hover {
   background-color: var(--opacity-15);
 }
@@ -34,6 +43,7 @@
   background-color: var(--opacity-5);
 }
 
+/* Advertising article */
 .advertisingContainer article {
   display: grid;
 }
@@ -41,10 +51,4 @@
 .advertisingContainer article > h5 {
   text-transform: uppercase;
   text-align: center;
-}
-
-.advertisingOverviewButton {
-  text-transform: lowercase;
-  text-align: center;
-  color: var(--gray);
 }

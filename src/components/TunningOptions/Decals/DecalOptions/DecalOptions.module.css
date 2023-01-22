@@ -1,25 +1,29 @@
+/* Container */
 .decalContainer {
   position: relative;
 }
 
+/* Decal Details Position */
 .decalDetails {
   position: absolute;
-  top: -350px;
-  left: 200%;
-  overflow: auto;
+  top: -260px;
+  left: 160%;
 }
 
+/* Decal Content */
 .decalContent > img {
   position: relative;
   margin: 8px 0 4px;
 }
 
+/* Decal Options */
 .decalOptions {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Decal Slider */
 .decalSlider {
   display: flex;
   align-items: center;
@@ -35,6 +39,7 @@
   color: var(--opacity-40);
 }
 
+/* Decal Price */
 .decalPrice {
   background-color: var(--opacity-15);
   padding: 4px;

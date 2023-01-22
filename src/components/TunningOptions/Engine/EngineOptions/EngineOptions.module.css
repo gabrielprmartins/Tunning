@@ -1,13 +1,16 @@
+/* Container */
 .engineContainer {
   position: relative;
 }
 
+/* Engine Details Position */
 .engineDetails {
   position: absolute;
   top: -50px;
   left: calc(100% + 40px);
 }
 
+/* Engine List */
 .engineList {
   margin-top: 4px;
   display: grid;
@@ -47,14 +50,15 @@
   background-color: rgba(81, 152, 183, 0.2);
 }
 
+.engineList > li:last-child:hover:after {
+  visibility: hidden;
+}
+
+/* Price */
 .price {
   color: var(--green);
 }
 
 .engineList > li:last-child > p.price {
   color: var(--blue);
-}
-
-.engineList > li:last-child:hover:after {
-  visibility: hidden;
 }

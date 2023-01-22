@@ -6,6 +6,7 @@ import styles from "./Advertising.module.css";
 const Advertising = () => {
   const [active, setActive] = useState(true);
 
+  // Enables and disables advertisement according to state
   function handleActiveAd() {
     setActive(!active);
   }
@@ -26,7 +27,7 @@ const Advertising = () => {
           </button>
           <article>
             <h5>Novo veículo na loja</h5>
-            <img src={CardAd} />
+            <img src={CardAd} loading="lazy" />
             <span className={styles.advertisingOverviewButton}>
               Clique para ver mais
             </span>

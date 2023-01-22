@@ -45,18 +45,20 @@ const options = [
   },
 ];
 
-const TunningList = () => {
+const TunningList = ({ tunningOptionName, setTunningOptionName }) => {
   const [active, setActive] = useState(false);
-  const [optionName, setOptionName] = useState("");
 
+  // Activates and sends the option name to the App component,
+  // so that it is shown in TunningSpecifications
   function handleActiveOptions(event) {
     let option = event.currentTarget.id;
-    if (optionName === option) {
-      setOptionName("");
+    if (tunningOptionName === option) {
+      setTunningOptionName("");
       setActive(!active);
-    } else setOptionName(option);
+    } else setTunningOptionName(option);
   }
 
+  // Maps the options and show the component according with name
   return (
     <div className={styles.tunningContainer}>
       <img src={Banner} />
@@ -67,13 +69,12 @@ const TunningList = () => {
               key={name}
               onClick={handleActiveOptions}
               id={name}
-              className={optionName === name ? "active" : ""}
+              className={tunningOptionName === name ? "active" : ""}
             >
               <img src={img} />
               <p className="paragraph-16-tw">{name}</p>
             </li>
-
-            {optionName === name ? component : ""}
+            {tunningOptionName === name ? component : ""}
           </div>
         ))}
       </ul>

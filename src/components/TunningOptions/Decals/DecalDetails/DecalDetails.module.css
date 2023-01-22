@@ -1,0 +1,187 @@
+/* Container */
+.decalContainer {
+  position: relative;
+}
+
+.decalColorsContainer {
+  display: grid;
+  position: absolute;
+  gap: 4px;
+  z-index: 1;
+  top: -80px;
+  left: 76px;
+}
+
+/* Wrapping */
+.wrapping {
+  display: grid;
+  width: 140px;
+}
+
+.wrapping > article {
+  padding: 8px 14px;
+  position: relative;
+}
+
+.wrapping > article:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5px; 
+  padding: 2px;
+  background: linear-gradient(to right, var(--opacity-15) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Causes the border containing the gradient to also have a border-radius */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Wrapping Slider */
+.wrappingSlider {
+  margin-top: 8px;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wrappingSlider > img {
+  max-width: 17px;
+  cursor: pointer;
+}
+
+.wrappingSlider p > span {
+  color: var(--opacity-40);
+}
+
+/* Wrapping Article */
+.wrapping > article span {
+  color: var(--gray);
+}
+
+.wrapping > article h4 {
+  font-weight: bold;
+}
+
+.wrapping > article strong {
+  color: var(--green);
+  font-weight: 500;
+}
+
+/* Selected Wrapp */
+.selectedWrapp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 4px 8px;
+}
+
+.selectedWrapp span {
+  width: 30px;
+  height: 35px;
+  border-bottom: 5px solid var(--opacity-30);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.selectedWrapp span:hover {
+  border-color: var(--opacity-50);
+}
+
+.selectedWrapp span:active {
+  border-color: var(--white);
+  border-bottom-width: 10px;
+}
+
+.selectedWrapp span:first-child {
+  border-color: var(--green);
+  background: url('../../../../assets/icons/tick-circle.svg') no-repeat center center rgba(9, 184, 121, 0.2);
+  background-size: 17px;
+  cursor: pointer;
+}
+
+.selectedWrapp span:last-child {
+  align-self: end;
+  height: 10px;
+  background-color: var(--white);
+}
+
+/* Decal Selector */
+.decalSelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.decalSelector > span {
+  width: 10px;
+  height: 5px;
+  background-color: var(--opacity-30);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.decalSelector > span:hover {
+  background-color: var(--opacity-50);
+}
+
+.decalSelector > span:active  {
+  background-color: var(--white);
+  margin-bottom: 4px;
+}
+
+.decalSelector > span:nth-child(3) {
+  background-color: var(--white);
+  margin-bottom: 4px;
+}
+
+/* Decal Colors */
+.decalColors {
+  background-color: var(--opacity-10);
+  padding: 14px 20px 20px 20px;
+  border-left: 1px solid var(--white);
+}
+
+.decalColors > span {
+  color: var(--gray);
+}
+
+.decalColors > ul {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.decalColors > ul > span {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.decalColors > ul > span:nth-child(1) {
+  background-color: var(--red);
+}
+
+.decalColors > ul > span:nth-child(2) {
+  background-color: var(--gray);
+}
+
+.decalColors > ul > span:nth-child(3) {
+  background-color: var(--gold);
+}
+
+.decalColors > ul > span:nth-child(4) {
+  background-color: var(--purple);
+}
+
+.decalColors > ul > span:nth-child(5) {
+  background-color: var(--blue);
+}
+
+.decalColors > ul > span:nth-child(6) {
+  box-shadow: 5px 5px 0px 0px white, -5px -5px 0px 0px white,  -5px 5px 0px 0px white,  5px -5px 0px 0px white;
+  background-color: var(--moss-green);
+}
