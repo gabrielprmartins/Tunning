@@ -50,8 +50,11 @@ const TunningList = () => {
   const [optionName, setOptionName] = useState("");
 
   function handleActiveOptions(event) {
-    setOptionName(event.currentTarget.id);
-    setActive(!active);
+    let option = event.currentTarget.id;
+    if (optionName === option) {
+      setOptionName("");
+      setActive(!active);
+    } else setOptionName(option);
   }
 
   return (
@@ -69,6 +72,7 @@ const TunningList = () => {
               <img src={img} />
               <p className="paragraph-16-tw">{name}</p>
             </li>
+
             {optionName === name ? component : ""}
           </div>
         ))}
