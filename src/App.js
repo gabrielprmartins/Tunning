@@ -1,10 +1,8 @@
 import BalanceView from "./components/BalanceView/BalanceView";
 import ExitButton from "./components/ExitButton/ExitButton";
 import TunningList from "./components/TunningList/TunningList";
-import DecalDetails from "./components/TunningOptions/Decals/DecalDetails/DecalDetails";
-import EngineDetails from "./components/TunningOptions/Engine/EngineDetails/EngineDetails";
-import EngineSpecifications from "./components/TunningOptions/Engine/EngineSpecifications/EngineSpecifications";
-
+import TunningSpecifications from "./components/TunningOptions/TunningSpecifications/TunningSpecifications";
+import Advertising from "./components/Advertising/Advertising";
 import "./styles/global.css";
 
 const App = () => {
@@ -13,6 +11,10 @@ const App = () => {
       <ExitButton />
       <TunningList />
       <BalanceView />
+      <div className="optionOverview">
+        <TunningSpecifications />
+        <Advertising />
+      </div>
     </div>
   );
 };

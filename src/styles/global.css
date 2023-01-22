@@ -49,11 +49,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  /* -webkit-user-select: none;
+  -webkit-user-select: none;
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   user-select: none;
-  outline: none; */
+  outline: none;
 }
 
 body {
@@ -79,6 +79,17 @@ img {
 
 .App {
   margin: 20px;
+  position: relative;
+  height: 94vh;
+}
+
+.optionOverview {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: grid;
+  gap: 8px;
+  justify-items: end;
 }
 
 /* Colors */

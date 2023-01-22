@@ -1,0 +1,15 @@
+.specificationsContainer {
+  text-align: right;
+  max-width: 300px;
+}
+
+.specificationsContainer > h1 {
+  text-transform: uppercase;
+}
+
+.specificationsParagraph {
+  display: block;
+  padding: 8px;
+  text-align: left;
+  background-color: var(--opacity-15);
+}
