@@ -1,6 +1,7 @@
 .specificationsContainer {
   text-align: right;
   max-width: 300px;
+  transform: skew(-5deg);
 }
 
 .specificationsContainer > h1 {

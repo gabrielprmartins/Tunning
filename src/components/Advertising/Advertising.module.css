@@ -14,6 +14,8 @@
   text-transform: uppercase;
   padding: 4px;
   cursor: pointer;
+  transform: skew(-5deg);
+  margin-right: 8px;
 }
 
 .closeButton {

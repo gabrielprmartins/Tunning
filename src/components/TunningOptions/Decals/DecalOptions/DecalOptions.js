@@ -9,6 +9,9 @@ const DecalOptions = () => {
   return (
     <div className={styles.decalContainer}>
       <div className={styles.decalContent}>
+        <div className={styles.decalTextureContainer}>
+          <div className={styles.decalTextureInner}></div>
+        </div>
         <img src={Texture} loading="lazy" />
         <div className={styles.decalOptions}>
           <div className={styles.decalSlider}>

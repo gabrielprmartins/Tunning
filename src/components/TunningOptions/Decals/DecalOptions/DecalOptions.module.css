@@ -10,14 +10,26 @@
   left: 160%;
 }
 
-/* Decal Content */
-.decalContent > img {
+/* Decal Texture */
+.decalTextureContainer {
   position: relative;
-  margin: 8px 0 4px;
+  margin: 8px 0;
+  background: url('../../../../assets/images/texture.svg') no-repeat center center;
+}
+
+.decalTextureInner {
+  width: 250px;
+  height: 97px;
+  position: absolute;
+  border: 1px solid var(--white);
+  top: -5px;
+  left: 5px;
+  z-index: 2;
 }
 
 /* Decal Options */
 .decalOptions {
+  margin-top: 4px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -78,9 +78,9 @@ img {
 }
 
 .App {
-  margin: 20px;
+  margin: 40px;
   position: relative;
-  height: 94vh;
+  height: 88vh;
 }
 
 .optionOverview {
@@ -117,19 +117,7 @@ img {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--opacity-5);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--gray);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  display: none;
 }
 
 /* Animations */

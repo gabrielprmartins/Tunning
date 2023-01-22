@@ -8,6 +8,7 @@
   gap: 8px;
   cursor: pointer;
   transition: var(--transition);
+  transform: rotate(5deg) skew(5deg);
 }
 
 .button strong {
@@ -20,6 +21,6 @@
   background-color: var(--opacity-15);
 }
 
-.button:active, .button:active strong {
-  color: #4B4B4B;
+.button:active {
+  background-color: rgba(75, 75, 75, 0.15);
 }

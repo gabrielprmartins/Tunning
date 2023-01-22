@@ -4,6 +4,7 @@
   top: 20px;
   right: 20px;
   text-align: right;
+  transform: rotate(-3deg) skew(-5deg);
 }
 
 /* Balance */
