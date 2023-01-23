@@ -1,0 +1,39 @@
+/* Container */
+.balanceContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+  transform: rotate(-3deg) skew(-5deg);
+}
+
+/* Balance */
+.balanceGrid {
+  display: grid;
+  grid-template-columns: auto 40px;
+  gap: 8px;
+}
+
+.currentBalance {
+  color: var(--green);
+}
+
+.changeBalance {
+  color: var(--gold);
+}
+
+/* Icon */
+.arrowsIcon {
+  background-color: var(--opacity-10);
+  align-self: end;
+  justify-self: start;
+  padding: 10px;
+  margin-bottom: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.arrowsIcon:hover {
+  background-color: var(--opacity-20);
+
+}

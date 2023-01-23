@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--opacity-5);
+  padding: 8px 16px;
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  transform: rotate(5deg) skew(5deg);
+}
+
+.button strong {
+  transition: var(--transition);
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.button:hover {
+  background-color: var(--opacity-15);
+}
+
+.button:active {
+  background-color: rgba(75, 75, 75, 0.15);
+}

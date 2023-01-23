@@ -1,0 +1,179 @@
+/* Fonts */
+@font-face {
+  font-family: 'Outfit';
+  src: url(../fonts/outfit/Outfit-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(../fonts/outfit/Outfit-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Black.ttf) format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-SemiBold.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url(../fonts/titillium-web/TitilliumWeb-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+body {
+  background: url(../assets/images/background.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Titillium', sans-serif;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  margin: 40px;
+  position: relative;
+  height: 88vh;
+}
+
+.optionOverview {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+}
+
+/* Colors */
+:root {
+  --red: #C33A53;
+  --green: #09B879;
+  --white: #FFFFFF;
+  --gray: #9A9A9A;
+  --moss-green: #3A4C3C;
+  --gold: #B79451;
+  --purple: #9C51B7;
+  --blue: #5198B7;
+  --sky-blue: #78D2EE;
+  --gradient: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  --opacity-5: rgba(255, 255, 255, 5%);
+  --opacity-10: rgba(255, 255, 255, 10%);
+  --opacity-15: rgba(255, 255, 255, 15%);
+  --opacity-20: rgba(255, 255, 255, 20%);
+  --opacity-25: rgba(255, 255, 255, 25%);
+  --opacity-30: rgba(255, 255, 255, 30%);
+  --opacity-40: rgba(255, 255, 255, 40%);
+  --opacity-50: rgba(255, 255, 255, 50%);
+  --opacity-80: rgba(255, 255, 255, 80%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animations */
+:root {
+  --transition: 0.2s;
+}
+
+/* Typhograpy */
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.paragraph-16-tw {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.paragraph-14-tw {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.paragraph-20-o {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.paragraph-16-o {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,71 @@
+/* Container */
+.advertisingContainer {
+  display: grid;
+  gap: 4px;
+  max-width: 180px;
+}
+
+/* Buttons */
+.openButton {
+  background-color: var(--opacity-10);
+  color: var(--gray);
+  border: none;
+  font-family: 'Titillium', sans-serif;
+  text-transform: uppercase;
+  padding: 4px;
+  cursor: pointer;
+  transform: skew(-5deg);
+  margin-right: 8px;
+}
+
+.closeButton {
+  margin-top: 40px;
+  background-color: var(--opacity-10);
+  color: var(--white);
+  border: none;
+  box-shadow: inset 0px 0px 0px 1px var(--opacity-20);
+  font-family: 'Titillium', sans-serif;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.advertisingOverviewButton {
+  text-transform: lowercase;
+  text-align: center;
+  color: var(--gray);
+}
+
+/* Button State */
+.closeButton:hover, .openButton:hover {
+  background-color: var(--opacity-15);
+}
+
+.closeButton:active, .openButton:active {
+  background-color: var(--opacity-5);
+}
+
+/* Advertising article */
+.advertisingContainer article {
+  display: grid;
+}
+
+.advertisingContainer article > h5 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Keyframe Animations */
+.advertisingContainer {
+  transform: translate3d(0px, 10px, 0px);
+  opacity: 0;
+  animation: toDefault var(--transition) forwards;
+}
+
+@keyframes toDefault {
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform: skew(-5deg);
+  }
+}

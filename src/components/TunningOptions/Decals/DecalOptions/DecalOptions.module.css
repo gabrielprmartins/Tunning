@@ -1,0 +1,71 @@
+/* Container */
+.decalContainer {
+  position: relative;
+}
+
+/* Decal Details Position */
+.decalDetails {
+  position: absolute;
+  top: -260px;
+  left: 160%;
+}
+
+/* Decal Texture */
+.decalTextureContainer {
+  position: relative;
+  margin: 8px 0;
+  background: url('../../../../assets/images/texture.svg') no-repeat center center;
+}
+
+.decalTextureInner {
+  width: 250px;
+  height: 97px;
+  position: absolute;
+  border: 1px solid var(--white);
+  top: -5px;
+  left: 5px;
+  z-index: 2;
+}
+
+/* Decal Options */
+.decalOptions {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Decal Slider */
+.decalSlider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.decalSlider > img {
+  max-width: 17px;
+  cursor: pointer;
+}
+
+.decalSlider p > span {
+  color: var(--opacity-40);
+}
+
+/* Decal Price */
+.decalPrice {
+  background-color: var(--opacity-15);
+  padding: 4px;
+  position: relative;
+  margin-right: 34px;
+}
+
+.decalPrice:after {
+  content: '';
+  background: url('../../../../assets/icons/tick-circle.svg') no-repeat center center rgba(9, 184, 121, 0.2);
+  position: absolute;
+  right: -34px;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background-size: 16px;
+}
