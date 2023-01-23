@@ -4,7 +4,7 @@ import EngineOptions from "../../components/TunningOptions/Engine/EngineOptions/
 import DecalOptions from "../TunningOptions/Decals/DecalOptions/DecalOptions";
 import styles from "./TunningList.module.css";
 
-import Banner from "../../assets/images/banner.svg";
+import Banner from "../../assets/images/Banner.svg";
 import EngineIcon from "../../assets/icons/engine.svg";
 import TransmissionIcon from "../../assets/icons/transmission.svg";
 import FixIcon from "../../assets/icons/fix.svg";
