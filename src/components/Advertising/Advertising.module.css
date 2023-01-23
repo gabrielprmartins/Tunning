@@ -36,7 +36,7 @@
   color: var(--gray);
 }
 
-/* Button Animation */
+/* Button State */
 .closeButton:hover, .openButton:hover {
   background-color: var(--opacity-15);
 }
@@ -53,4 +53,19 @@
 .advertisingContainer article > h5 {
   text-transform: uppercase;
   text-align: center;
+}
+
+/* Keyframe Animations */
+.advertisingContainer {
+  transform: translate3d(0px, 10px, 0px);
+  opacity: 0;
+  animation: toDefault var(--transition) forwards;
+}
+
+@keyframes toDefault {
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform: skew(-5deg);
+  }
 }

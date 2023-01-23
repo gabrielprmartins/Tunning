@@ -14,3 +14,18 @@
   text-align: left;
   background-color: var(--opacity-15);
 }
+
+/* Keyframe Animations */
+.specificationsContainer {
+  transform: translate3d(20px, 0px, 0px);
+  opacity: 0;
+  animation: toDefault var(--transition) forwards;
+}
+
+@keyframes toDefault {
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform: skew(-5deg);
+  }
+}
